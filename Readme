@@ -1,0 +1,19 @@
+# Housebox Catastro API
+
+Servidor intermediario para consultar la API pública del Catastro español.
+
+## Endpoint
+
+GET /catastro?ref=<referencia_catastral>
+
+## Despliegue en Render
+
+1. Sube este repositorio a GitHub
+2. En render.com → New Web Service → conecta el repo
+3. Render detecta el render.yaml automáticamente
+4. Deploy
+
+## Uso local
+
+pip install -r requirements.txt
+uvicorn main:app --reload
